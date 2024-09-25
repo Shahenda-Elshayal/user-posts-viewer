@@ -1,0 +1,48 @@
+body {
+    font-family: "Playwrite DE Grund", cursive;
+    padding: 10px;
+    background:linear-gradient(to right,rgb(110, 0, 0) , rgb(0, 0, 112));
+}
+
+.all {
+    display: flex;
+    gap: 30px;
+}
+
+.left {
+    width: 30%;
+    padding-top: 15px;
+}
+
+.right {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+}
+
+@media (max-width:767px) {
+    .all {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        order: -1;
+    }
+}
+
+.active {
+    border: 5px solid rgb(0, 0, 112);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
